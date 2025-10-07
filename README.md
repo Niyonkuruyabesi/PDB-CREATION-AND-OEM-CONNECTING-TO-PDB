@@ -31,6 +31,8 @@ FILE_NAME_CONVERT = (
   'C:\app\niyon\product\21c\oradata\XE\plsql_class2025db'
 );
 ```
+![PDB_of_classwork](screenshots/create_1st_pdb.png)
+
 
  Task 2: Create and Delete Another PDB
 
@@ -43,12 +45,16 @@ FILE_NAME_CONVERT = (
   'C:\app\niyon\product\21c\oradata\XE\to_delete_pdb'
 );
 ```
+![pdb_to_delete](screenshots/create_pdp_to_delete.png)
+
 
 SQL Command (Delete):
 ```sql
 ALTER PLUGGABLE DATABASE ya_to_delete_pdb_27715 CLOSE IMMEDIATE;
 DROP PLUGGABLE DATABASE ya_to_delete_pdb_27715 INCLUDING DATAFILES;
 ```
+![delete](screenshots/pdb_deleted.png)
+
 ✅ Result:
 The temporary PDB ya_to_delete_pdb_27715 was created and successfully deleted after testing.
 
@@ -67,9 +73,11 @@ https://localhost:5500/em
 
 Logged in using:
 
-Username: yabesi_plsqlauca_27715
+Username: sys
 
 Password: *****
+
+![oem](screenshots/OEM_DASHBOARD1.png)
 
 ✅ Result:
 OEM Express dashboard loaded successfully for plsql_class2025db.
